@@ -1,13 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Atv1 } from "../pages/Atv1";
-import { Atv2 } from "../pages/Atv2";
+import { Home } from "../pages/home";
 
 export function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/atv1" element={<Atv1 />} />
-        <Route path="/atv2" element={<Atv2 />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
